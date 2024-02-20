@@ -10,7 +10,7 @@
 		<property name="connection.username">root</property>
 		<property name="connection.password">yash@123</property>
 		<property name="diaLect">org.hibernate.dialect.MySQL8Dialect</property>
-		<property name="hbm2ddl.auto">create</property>
+		<property name="hbm2ddl.auto">update</property>
 		<property name="show_sql">true</property>
 		<mapping class="com.hibernate.projectHibernate.Student"/>
 		<mapping class="com.hibernate.projectHibernate.Address"/>

@@ -18,15 +18,15 @@ public class App {
 
 		// creating student
 		Student st = new Student();
-		st.setId(102);
-		st.setName("Yash Gupta");
-		st.setCity("Indore");
+		st.setId(103);
+		st.setName("Kirti Gupta");
+		st.setCity("Bhopal");
 		System.out.println(st);
 
 		// creating object of Student class
 		Address ad = new Address();
-		ad.setStreet("Indra Nagar");
-		ad.setCity("Gwalior");
+		ad.setStreet("Vijay Nagar");
+		ad.setCity("Indore");
 		ad.setOpen(true);
 		ad.setAddedDate(new Date());
 		ad.setTemperature(13.2);
