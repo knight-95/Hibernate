@@ -1,23 +1,16 @@
 package com.hibernate.projectHibernate;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity // marking
 //@Table(name="myStudents") //renaming table name
 public class Student {
 
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return this.id + " : " + this.name + " : " + this.city;
-	}
-
 	@Id // making it primary key
 	private int id;
 	private String name;
 	private String city;
+	private Certificate certi;
 
 	public Student() {
 		super();
@@ -53,6 +46,20 @@ public class Student {
 
 	public void setCity(String city) {
 		this.city = city;
+	}
+
+	public Certificate getCerti() {
+		return certi;
+	}
+
+	public void setCerti(Certificate certi) {
+		this.certi = certi;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.id + " : " + this.name + " : " + this.city;
 	}
 
 }
