@@ -16,5 +16,7 @@
 		<mapping class="com.hibernate.projectHibernate.Address"/>
 		<mapping class="com.map.Question"/>
 		<mapping class="com.map.Answer"/>
+		<mapping class="com.oneToMany.Question1"/>
+		<mapping class="com.oneToMany.Answer1"/>
 	</session-factory>
 </hibernate-configuration>
